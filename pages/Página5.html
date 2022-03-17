@@ -5,95 +5,270 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina 5</title>
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="../index.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </head>
-<body class="grid__container5">
+<body class="grid__container5"style="min-width: 768;">
     <img class='background5'src="../Fotos/background-page-5.jpg" alt="background 5">
-    <main> 
-        <nav class="navbar5"> 
-            <img class="logo5" src="../Fotos/logo index.png" alt="logo5"> <!--LOGO-->
-            <ul class="navbar5__items">
-                <li class="navbar5__btn"><a class="btn0" href="../index.html">Inicio</a></li> 
-                <li class="navbar5__btn"><a href="./Página4.html">Servicios</a></li>
-                <li class="navbar5__btn"><a href="./Página2.html">Contactanos</a></li>
-                <li class="navbar5__btn"><a href="./Página2.html">Quienes somos</a></li>
-                <li class="navbar5__btn"><a href="./Página6.html">Mejora tu vida</a></li>
-            </ul>
-        </nav>
-    </main>
-    <div class="btn__volver__pagina5__container">
-        <a class="btn__volver__pagina5" href="./Página4.html">Página anterior</a>
-    </div>
-    <div class='adelanto__tienda__container'>    
-        <h1 class="adelanto__nuestra__tienda">Adelanto de nuestra tienda</h1>
-    </div>
-    <div class="prendas__superiores__titulo__container">
-        <h2 class='prendas__superiores'>Prendas superiores</h2>
-    </div>
-    <div>
-    <div class="remeras__titulo__container">
-        <h3 class="remeras__titulo">Remeras</h3>
-    </div>
-    <div class="remeras__foto__container">
-        <div class="remeras__grupo1">
-            <img class="remera__foto1" src="../Fotos/remera 1.jpg"  alt='Ropa/Clothes'>
-            <img class="remera__foto2" src="../Fotos/remera 4.jpg"  alt='Ropa/Clothes'>
-        </div>
-        <div class="remeras__grupo2">
-            <img class="remera__foto3" src="../Fotos/remera 6.jpg"  alt='Ropa/Clothes'>
-            <img class="remera__foto4" src="../Fotos/remera 7.jpg"  alt='Ropa/Clothes'>
-        </div>
-    </div> 
-
-    <h3 class="camisas__titulo">Camisas</h3>
-    <div class="camisas__grupo1"> 
-        <img class="camisa__foto1" src="../Fotos/camisa 1.jpeg" alt='Ropa/Clothes'>
-        <img class="camisa__foto2" src="../Fotos/camisa 2.jpeg" alt='Ropa/Clothes'>
-        <img class="camisa__foto3" src="../Fotos/camisa 3.jpg" alt='Ropa/Clothes'>
-    </div>
-    <div class="camisas__grupo2">
-        <img class="camisa__foto4" src="../Fotos/camisa 4.jpg" alt='Ropa/Clothes'>
-        <img class="camisa__foto5" src="../Fotos/camisa 5.jpeg" alt='Ropa/Clothes'>
-    </div>
-    <div class="blazers__container">
-        <h3 class="blazers__titulo">Blazers</h3>
-        <div class="blazers__grupo1">
-            <img class="blazer__foto1" src="../Fotos/blazer 1.jpg"  alt="Ropa/Clothes">
-            <img class="blazer__foto2" src="../Fotos/blazer 2.jpeg" alt="Ropa/Clothes" >
-            <img class="blazer__foto3" src="../Fotos/blazer 3.jpg" alt="Ropa/Clothes" >
-        </div>
-        <div class="blazers__grupo2">
-            <img class="blazer__foto4" src="../Fotos/blazer 4.jpg" alt="Ropa/Clothes">
-            <img class="blazer__foto5" src="../Fotos/blazer 5.jpg" alt="Ropa/Clothes" >
-        </div>
+    <header> 
+        <nav class='navbar navbar-expand-lg navbar-dark bg-dark mb-4'>
+            <button type="button" class="btn btn-dark bg-transparent" disabled data-bs-toggle="button" autocomplete="off">
+                <span>GENT®</span>
+            </button>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span>Menú</span>
+            </button>
+      
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+              <ul class=" navbar-nav mx-auto ">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Página4.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Página2.html">Contactanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Página2.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Página6.html">Mejora tu vida</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Página3.html">Página anterior</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <div class='container d-flex'>    
+        <h1 class="adelanto__nuestra__tienda border border-dark w-100 text-center">Adelanto de nuestra tienda</h1>
     </div>
     
-    <div class="prendas__inferiores__container">
-        <h3 class="prendas__inferiores__titulo">Prendas inferiores</h3>
-        <div class="prendas__inferiores__grupo1">
-            <img class="pantalon__foto1" src="../Fotos/pantalon 1.jpg" height="400" alt="Ropa/Clothes">
-            <img class="pantalon__foto2" src="../Fotos/pantalon 2.jpg" height="400" alt="Ropa/Clothes">
-            <img class="pantalon__foto3" src="../Fotos/pantalon 3.jpg" height="400" alt="Ropa/Clothes">
+    <div class="container-fluid">
+
+        <div class="jumbotron  d-flex flex-column justify-content-center">
+          <h1 class="text-center bg-dark text-light pb-2 w-100 mt-3">Prendas superiores</h1>
+          <p class="text-center border-2 border-dark border-top border-bottom w-100">Remeras</p>
         </div>
-        <div class="prendas__inferiores__grupo2">
-            <img class="pantalon__foto4" src="../Fotos/pantalon 4.jpg" height="400" alt="Ropa/Clothes">
-            <img class="pantalon__foto5" src="../Fotos/pantalon 5.jpg" height="400" alt="Ropa/Clothes">
+    
+        <div class="row text-center  d-flex justify-content-center">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <figure>
+              <img src="../Fotos/remera 1.jpg " class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+              <figcaption>Modelo 1</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <figure>
+              <img src="../Fotos/remera 3.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+              <figcaption>Modelo 2</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <figure>
+              <img src="../Fotos/remera 4.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+              <figcaption>Modelo 3</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <figure>
+              <img src="../Fotos/remera 6.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+              <figcaption>Modelo 4</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <figure>
+              <img src="../Fotos/remera 7.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+              <figcaption>Modelo 5</figcaption>
+            </figure>
+          </div>
         </div>
+      </div>
+
+      <div class="jumbotron d-flex justify-content-center">
+        <p class=" text-center border-2 border-dark border-top border-bottom w-100">Camisas</p>
+      </div>
+  
+      <div class="row text-center  d-flex justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/camisa 1.jpeg " class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 1</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/camisa 2.jpeg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 2</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 camisa-selected">
+          <figure>
+            <img src="../Fotos/camisa 3.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 3</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/camisa 4.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 4</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/camisa 5.jpeg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 5</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
 
-    <div class="outfits__container">
-        <h3 class="outfits__titulo">Outfits y recomendaciones para tí</h3>
-        <div class="outfits">
-            <img class="outfit__1" src="../Fotos/outfit 1.jpg" alt="Ropa/Clothes">
-            <img class="outfit__2" src="../Fotos/outfit 2.jpg" alt="Ropa/Clothes">
-            <img class="outfit__3" src="../Fotos/outfit 3.jpg" alt="Ropa/Clothes">
-            <img class="outfit__4" src="../Fotos/outfit 4.jpg" alt="Ropa/Clothes">
+    <div class="jumbotron d-flex justify-content-center">
+        <p class=" text-center border-2 border-dark border-top border-bottom w-100">Blazers</p>
+      </div>
+  
+      <div class="row text-center  d-flex justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/blazer 1.jpg " class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 1</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/blazer 2.jpeg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 2</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 camisa-selected">
+          <figure>
+            <img src="../Fotos/blazer 3.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 3</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/blazer 4.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 4</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/blazer 5.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 5</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    
+    <div class="jumbotron d-flex justify-content-center">
+        <p class=" text-center border-2 border-dark border-top border-bottom w-100">Prendas inferiores</p>
+      </div>
+  
+      <div class="row text-center  d-flex justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/pantalon 1.jpg " class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 1</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/pantalon 2.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 2</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 camisa-selected">
+          <figure>
+            <img src="../Fotos/pantalon 3.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 3</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/pantalon 4.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 4</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <figure>
+            <img src="../Fotos/pantalon 5.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Modelo 5</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron d-flex justify-content-center">
+        <p class=" text-center border-2 border-dark border-top border-bottom w-100">Outfits recomendados para tí</p>
+      </div>
+  
+      <div class="row text-center  d-flex flex-row m-auto">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <figure>
+            <img src="../Fotos/outfit 1.jpg " class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Opción 1</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <figure>
+            <img src="../Fotos/outfit 2.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Opción 2</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <figure>
+            <img src="../Fotos/outfit 3.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Opción 3</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <figure>
+            <img src="../Fotos/outfit 4.jpg" class="img-thumbnail grayscale border border-4 border-dark" alt="Ropa/Clothes">
+            <figcaption>Opción 4</figcaption>
+          </figure>
         </div>
     </div>
-    <div class="final__pagina5">
-        <footer class="footer5"><p>Aquí se va a encontrar todo el contenido del footer</p></footer>
-        <a class="btn__next__pagina5" href='./Página6.html'>Siguiente página</a> <!--BOTON PARA PASAR DE PAGINA-->
+    <div class="container bg-dark mt-2 d-flex flex-column gap-2 pt-1">
+        <footer class="text-light text-center pt-2 w-100 border rounded"><p>Aquí se va a encontrar todo el contenido del footer</p></footer>
+        <a class="btn btn-dark w-100 border" href="./Página6.html" role="button">Siguiente página</a>
     </div>
+
 </body>
 </html>

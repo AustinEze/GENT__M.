@@ -20,14 +20,13 @@
 
 html {
   font-size: 62.5%;
-  font-size: 3em;
+  font-size: 2em;
   height: 100%;
 }
 
 body a:hover {
   color: grey;
 }
-
 
 /*PAGINA INDEX*/
 
@@ -51,12 +50,9 @@ body a:hover {
   height: 100%;
 }
 
-.navbar1 {
-  grid-area: navbar;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-bottom: 1.5rem;
+.navbar-item{
+  display:flex;
+  justify-content: space-between;
 }
 
 .navbar1 a {
@@ -649,34 +645,6 @@ body a {
   height: 400px;
 }
 
-.camisas__titulo {
-  font-size: 0.7em;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.camisas__grupo1 {
-  display:flex;
-  justify-content:center;
-  gap: 1em;
-  margin-bottom:0.5rem;  
-}
-
-
-.camisas__grupo2 {
-  display:flex;
-  justify-content:center;
-  gap: 1em;
-  margin-bottom:2.5rem;
-}
-
-.camisa__foto1, .camisa__foto2, .camisa__foto3, .camisa__foto4, .camisa__foto5 {
-  width: 415px;
-  height: 400px;
-}
-
 .blazers__container {
   display:grid;
   grid-template-columns: 1fr;
@@ -889,12 +857,6 @@ body a {
   margin-bottom: 1rem;
 }
 
-iframe {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  width:100vw;
-}
 
 
 .links__materiales {
@@ -1179,38 +1141,20 @@ iframe {
     align-items: center;
   }
 
+}
+
   /*PÁGINA 6*/
 
-  .logo6 {
-    min-width: 1024px;
-    height: 400px;
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .grid__container{
+    height:100%
   }
 
-  .navbar6{
+  .seccion__libros {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
   }
-
-  .navbar6__items {
-    display:flex;
-    gap: 1.5em;
-    font-size: 0.7em;
-    margin-top: 0.3rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .btn__volver__pagina6 {
-    margin-bottom: 1rem;
-  }
-
-  .navbar6__btn {
-    margin-left: 0.3rem;
-    border: 2px solid var(--colorsecundario);
-  }
-
-  .video1, .video2, .video3{
-    min-width: 1024px;
-  }
-
+  
 }
