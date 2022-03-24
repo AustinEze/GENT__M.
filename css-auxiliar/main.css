@@ -1,16 +1,46 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+  /*Para quitar subrayado de los textos de index*/ }
+
+:root {
+  --colorprincipal: #fff980;
+  --colorsecundario: black; }
+
+html {
+  font-size: 62.5%;
+  font-size: 2em;
+  height: 100%;
+  width: 100%; }
+
+body a:hover {
+  color: grey; }
+
 /*PAGINA INDEX*/
 .video__grid {
   position: fixed;
   width: 100%;
   z-index: -100; }
 
-.logo__index {
-  display: flex;
-  justify-content: center;
-  padding-top: 3rem;
-  margin-bottom: 1rem; }
+.grid__container {
+  background-color: #8d8389;
+  display: grid;
+  grid-template-columns: 7fr;
+  grid-template-rows: 0.5fr 350px;
+  gap: 0px 0px;
+  grid-template-areas: "header"
+ "logo"
+ "next"
+ "footer";
+  height: 100%; }
 
 .button {
   position: relative;
@@ -23,29 +53,31 @@
   cursor: pointer;
   border-radius: 5px;
   font-family: 'Oswald', sans-serif; }
-  .button:before {
-    position: absolute;
-    content: '';
-    top: -2px;
-    left: -2px;
-    height: calc(100% + 4px);
-    width: calc(100% + 4px);
-    border-radius: 5px;
-    z-index: -1;
-    opacity: 0;
-    filter: blur(5px);
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    background-size: 400%;
-    transition: opacity .3s ease-in-out;
-    animation: animate 20s linear infinite; }
-  .button:hover:before {
-    opacity: 1; }
-  .button:hover:active {
-    background: none; }
-  .button:hover:active:before {
-    filter: blur(2px); }
-  .button:hover:active:before {
-    filter: blur(2px); }
+
+.button:before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(5px);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: animate 20s linear infinite; }
+
+.button:hover:before {
+  opacity: 1; }
+
+.button:hover:active {
+  background: none; }
+
+.button:hover:active:before {
+  filter: blur(2px); }
 
 @keyframes animate {
   0% {
@@ -58,32 +90,32 @@
 .navbar-item {
   display: flex;
   justify-content: space-between; }
-  .navbar-item a {
-    color: #fff980; }
+
+.navbar1 a {
+  color: var(--colorprincipal); }
+
+.main__logo {
+  grid-area: logo;
+  margin: auto auto;
+  align-self: center; }
 
 .next__container {
   display: flex;
   justify-content: center; }
 
-*,
-::before,
-::after {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  font-family: "Oswald", sans-serif;
-  list-style-type: none;
-  font-family: "Oswald", sans-serif;
-  /*Para quitar subrayado de los textos de index*/ }
+.next__index {
+  grid-area: next;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  justify-content: center;
+  color: var(--colorprincipal);
+  width: 200px; }
 
-html {
-  font-size: 62.5%;
-  font-size: 2em;
-  height: 100%;
-  width: 100%; }
-
-body a:hover {
-  color: grey; }
+.footer__index {
+  grid-area: footer;
+  font-size: 0.5em;
+  color: var(--colorprincipal);
+  margin-top: 3rem; }
 
 /*PAGINA 2*/
 .h2-s {
@@ -104,7 +136,12 @@ body a:hover {
     text-shadow: none; }
   18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
     color: #dfdfdf;
-    text-shadow: 0 0 10px #ececec, 0 0 20px #ececec, 0 0 40px #ececec, 0 0 80px #ececec, 0 0 160px #ececec, 0 0 400px #ececec; } }
+    text-shadow: 0 0 10px #ececec,
+ 0 0 20px #ececec,
+ 0 0 40px #ececec,
+ 0 0 80px #ececec,
+ 0 0 160px #ececec,
+ 0 0 400px #ececec; } }
 
 .h2-s span:nth-child(even) {
   animation-delay: 0.2s; }
@@ -173,7 +210,9 @@ body a:hover {
 
 .quienes__somos {
   display: grid;
-  grid-template-areas: 'Quienes__somos__titulo' 'Quienes__somos__parrafo' 'btn__aceptar';
+  grid-template-areas: 'Quienes__somos__titulo'
+ 'Quienes__somos__parrafo'
+ 'btn__aceptar';
   grid-template-columns: 1fr;
   grid-template-rows: 100px; }
 
@@ -212,7 +251,10 @@ body a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px 36px 100px 1fr;
-  grid-template-areas: 'contacto__titulo' 'contacto__parrafo' 'redes' 'formulario__container';
+  grid-template-areas: 'contacto__titulo'
+ 'contacto__parrafo'
+ 'redes'
+ 'formulario__container';
   text-align: center; }
 
 .contacto__titulo {
@@ -250,7 +292,8 @@ body a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 'nuestras__cedes__titulo' 'nuestras__cedes__parrafo'; }
+  grid-template-areas: 'nuestras__cedes__titulo'
+ 'nuestras__cedes__parrafo'; }
 
 .nuestras__cedes__titulo {
   display: flex;
@@ -333,7 +376,9 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 100px 150px;
-  grid-template-areas: 'bienvenida__saludo' 'bienvenida__parrafo' 'aceptar3';
+  grid-template-areas: 'bienvenida__saludo'
+ 'bienvenida__parrafo'
+ 'aceptar3';
   align-items: center; }
 
 .bienvenida__saludo {
@@ -546,7 +591,8 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 400px 500px;
-  grid-template-areas: 'remeras__grupo1' 'remeras__grupo2'; }
+  grid-template-areas: 'remeras__grupo1'
+ 'remeras__grupo2'; }
 
 .remeras__grupo1 {
   display: flex;
@@ -569,7 +615,9 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 400px 400px;
-  grid-template-areas: 'Blazers__titulo' 'Blazers__grupo1' 'Blazers__grupo2'; }
+  grid-template-areas: 'Blazers__titulo'
+ 'Blazers__grupo1'
+ 'Blazers__grupo2'; }
 
 .blazers__container:nth-last-of-type(2) {
   grid-area: Blazers__titulo; }
@@ -606,7 +654,9 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 400px 400px;
-  grid-template-areas: 'Prendas__inferiores__titulo' 'Prendas__inferiores__grupo1' 'Prendas__inferiores__grupo2'; }
+  grid-template-areas: 'Prendas__inferiores__titulo'
+ 'Prendas__inferiores__grupo1'
+ 'Prendas__inferiores__grupo2'; }
 
 .prendas__inferiores__titulo {
   margin-top: 1rem;
@@ -634,7 +684,8 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 400px;
-  grid-template-areas: 'outfits__titulo' 'outfits__fotos'; }
+  grid-template-areas: 'outfits__titulo'
+ 'outfits__fotos'; }
 
 .outfits__titulo {
   font-size: 0.7em;
@@ -701,7 +752,8 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 71px 50px;
-  grid-template-areas: 'Titulo__introduccion' 'Parrafo__introduccion'; }
+  grid-template-areas: 'Titulo__introduccion'
+ 'Parrafo__introduccion'; }
 
 .introduccion {
   font-size: 1em;
@@ -723,7 +775,13 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 100px 500px 100px 500px 100px 500px;
-  grid-template-areas: 'Titulo__seccion__videos' 'Explicacion1' 'video1' 'Explicacion2' 'video2' 'Explicacion3' 'video3'; }
+  grid-template-areas: 'Titulo__seccion__videos'
+ 'Explicacion1'
+ 'video1'
+ 'Explicacion2'
+ 'video2'
+ 'Explicacion3'
+ 'video3'; }
 
 .seccion__videos p {
   font-size: 0.5em;
@@ -735,7 +793,8 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 100px;
-  grid-template-areas: 'links__titulo' 'links__parrafo'; }
+  grid-template-areas: 'links__titulo'
+ 'links__parrafo'; }
 
 .links__materiales__titulo {
   display: flex;
@@ -757,7 +816,9 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100 400px 400px;
-  grid-template-areas: 'recomendaciones__titulo' 'libros__grupo1' 'libros__grupo2'; }
+  grid-template-areas: 'recomendaciones__titulo'
+ 'libros__grupo1'
+ 'libros__grupo2'; }
 
 .recomendaciones {
   font-size: 0.7em;
@@ -784,7 +845,8 @@ body a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px 70px;
-  grid-template-areas: 'volver__secciones' 'footer6';
+  grid-template-areas: 'volver__secciones'
+ 'footer6';
   row-gap: 1em; }
 
 .footer6 {
