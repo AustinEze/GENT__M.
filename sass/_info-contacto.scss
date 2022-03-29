@@ -1,0 +1,162 @@
+
+/*PAGINA 2*/
+
+.h2-s {
+    position: relative;
+    width: 100%;
+    font-size:  5vw;
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-reflect: below -30px linear-gradient(transparent #5f5f5f);
+      & span {
+        animation: flashing 3s linear infinite;
+      }
+  
+      & span:nth-child(even){
+        animation-delay: 0.2s;
+      }
+  
+      @keyframes flashing {
+        0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+          color: rgb(0, 0, 0);
+          text-shadow: none;
+        } 
+        18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+          color: #dfdfdf;
+          text-shadow: 0 0 10px #ececec,
+          0 0 20px #ececec,
+          0 0 40px #ececec,
+          0 0 80px #ececec,
+          0 0 160px #ececec,
+          0 0 400px #ececec;
+          
+        }
+      }
+  }
+  
+  @mixin hover__bg__redes{
+    background-color: map-get($redes, background);
+    border-radius: 10px;
+  }
+
+  .redes__container{
+    display: flex;
+    align-content: center;
+      & .red{
+        text-decoration: none;
+      }
+
+      & .instagram:hover {
+        color: map-get($redes, instagram);
+        @include hover__bg__redes;
+      }
+    
+      & .twitter:hover {
+        color: map-get($redes, twitter);
+        @include hover__bg__redes;
+      }
+    
+      & .correo:hover {
+        color: map-get($redes, correo);
+        @include hover__bg__redes;
+      }
+  }
+  
+  .background__pagina2 {
+    position: fixed;
+    z-index: -1;
+  }
+
+  .quienes__somos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 2rem;
+
+      & .quienes__somos__titulo {
+        @extend .quienes__somos;
+        font-size: 2em;
+      } 
+
+      & .quienes__somos__parrafo {
+        @extend .quienes__somos__titulo;
+        font-size: 1em;
+      }
+      
+      & div .container{
+        @extend .quienes__somos;
+      }
+  }
+  
+  @mixin cuadro__contacto {
+    border: 8px double #414141;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 20px;
+  }
+
+  .contacto__container {
+    @include cuadro__contacto;
+      &.__titulo {
+        @include cuadro__contacto;
+        font-size: 2em;
+      }
+
+      &.__parrafo {
+        font-size: 1em;
+      }
+  }
+  
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 1rem;
+
+      & .redes__container {
+        gap: 1.3em;        
+      }
+  }
+  
+  .formulario__container {
+    grid-area: formulario__container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      & label, input, textarea{
+        margin-top: 0.5rem;
+      }
+
+      &.__parrafo {
+        font-size: 0.5em;
+      } 
+  }
+  
+  .nuestras__cedes {
+    @include cuadro__contacto;
+    width: 700px;
+    margin-left: 11em;
+
+    & .__titulo {
+      font-size: 1.5em;
+    } 
+    
+    & .__parrafo {
+      font-size: 1em;
+    }
+  }
+
+  .pie__pagina2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      & .footer2 {
+        font-size: 1em;
+      }
+  }
+
