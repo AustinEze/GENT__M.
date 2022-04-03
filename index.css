@@ -205,123 +205,16 @@ body a:hover {
   position: fixed;
   z-index: -1; }
 
-body a {
-  color: var(--colorprincipal); }
-
-.navbar3 {
-  display: grid;
-  grid-area: navbar;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'logo3 navbar3';
-  align-items: center; }
-
-.navbar3 .logo3 {
-  width: 5em; }
-
-.navbar3__items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-
-.volver3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'volver3__btn';
-  background-color: var(--colorsecundario);
-  opacity: 0.7;
-  width: 240px;
-  margin-top: -0.3rem; }
-
-.volver3__btn {
-  font-size: 0.7em;
-  display: flex;
-  justify-content: center; }
-
-.bienvenida__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 100px 150px;
-  grid-template-areas: 'bienvenida__saludo' 'bienvenida__parrafo' 'aceptar3';
-  align-items: center; }
-
-.bienvenida__saludo {
-  display: flex;
-  justify-content: center;
-  font-size: 1em;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem; }
-
-.bienvenida__parrafo {
-  display: flex;
-  justify-content: center;
-  font-size: 0.5em; }
-
-.aceptar3__container {
-  display: flex;
-  justify-content: center; }
-
-.aceptar3 {
-  background-color: var(--colorsecundario);
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  font-size: 0.7em;
-  opacity: 0.7;
-  margin-bottom: 2rem;
-  margin-top: 1.5rem; }
-
-.footer3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'footer3'; }
+.bienvenida__parrafo, .footer3 p {
+  font-size: 0.6em;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
 
 .footer3 p {
-  font-size: 0.5rem;
-  display: flex;
-  justify-content: center; }
+  margin-bottom: 0;
+  text-align: center; }
 
 /*PAGINA 4*/
-.grid__container4 {
-  display: grid; }
-
-.logo4 {
-  width: 4.5em; }
-
-.navbar4 {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 98.35px;
-  grid-template-areas: 'logo4 navbar4'; }
-
-.navbar4__items {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
-  margin-left: 0.3rem; }
-
-.btn__volver__container4 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'footer4';
-  width: 216px;
-  opacity: 0.7; }
-
-.btn__volver4 {
-  background-color: var(--colorsecundario);
-  font-size: 0.7em;
-  display: flex;
-  justify-content: center; }
-
-.disfruta__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'Titulo__Disfruta'; }
-
 .disfruta__contenido {
   margin-top: 1rem;
   font-size: 1em;
@@ -333,50 +226,34 @@ body a {
   justify-content: space-around;
   margin-top: 1.5rem; }
 
-.ir__tienda__container {
+.ir__tienda__container, .ir__datoscuriosos__container {
   background: url(./Fotos/background-boton-tienda.jpg);
   width: 600px;
   height: 300px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'ir__tienda';
   align-items: center; }
-
-.ir__tienda {
-  width: 600px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  .ir__tienda__container .ir__tienda, .ir__datoscuriosos__container .ir__tienda, .ir__datoscuriosos__container .ir__datoscuriosos {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff980; }
+  .ir__tienda__container .ir__tienda:hover, .ir__datoscuriosos__container .ir__tienda:hover, .ir__datoscuriosos__container .ir__datoscuriosos:hover {
+    color: grey; }
 
 .ir__datoscuriosos__container {
-  background: url(./Fotos/background-impulsatuvida.jpg);
-  width: 600px;
-  height: 300px;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'Impulsa__tu__vida'; }
-
-.ir__datoscuriosos {
-  width: 600px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.footer4 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'footer4'; }
+  background: url(./Fotos/background-impulsatuvida.jpg); }
+  .ir__datoscuriosos__container .ir__datoscuriosos {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .ir__datoscuriosos__container .ir__datoscuriosos:hover {
+    color: grey; }
 
 .footer4 p {
   display: flex;
   justify-content: center;
-  font-size: 0.5em;
+  font-size: 0.8em;
   margin-top: 1rem; }
 
 /*PÁGINA 5*/
@@ -384,193 +261,11 @@ body a {
   position: fixed;
   z-index: -1; }
 
-.grid__container5 {
-  display: grid; }
-
-.navbar5 {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 98.35px;
-  grid-template-areas: 'logo5 navbar5'; }
-
-.navbar5__items {
-  display: flex;
-  flex-direction: row;
-  gap: 0.6em; }
-
-.logo5 {
-  width: 4.5em; }
-
-.btn__volver__pagina5 {
-  font-size: 0.7em;
-  display: flex;
-  justify-content: center; }
-
-.btn__volver__pagina5__container {
-  background-color: var(--colorsecundario);
-  width: 216px;
-  opacity: 0.7;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-columns: auto;
-  grid-template-areas: 'btn__volver5';
-  margin-bottom: 1rem; }
-
-.adelanto__tienda__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'Titulo__adelanto__tienda'; }
-
 .adelanto__nuestra__tienda {
   font-size: 1.5em;
   display: flex;
   justify-content: center;
   margin-bottom: 1rem; }
-
-.prendas__superiores__titulo__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'Prendas__superiores__titulo'; }
-
-.prendas__superiores {
-  font-size: 1em;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem; }
-
-.remeras__titulo__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'Remeras__titulo'; }
-
-.remeras__titulo {
-  font-size: 0.7em;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem; }
-
-.remeras__foto__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 400px 500px;
-  grid-template-areas: 'remeras__grupo1' 'remeras__grupo2'; }
-
-.remeras__grupo1 {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 0.5rem; }
-
-.remeras__grupo2 {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-top: 1rem;
-  margin-bottom: 2.5rem; }
-
-.remera__foto1, .remera__foto2, .remera__foto3, .remera__foto4 {
-  width: 420px;
-  height: 400px; }
-
-.blazers__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 400px 400px;
-  grid-template-areas: 'Blazers__titulo' 'Blazers__grupo1' 'Blazers__grupo2'; }
-
-.blazers__container:nth-last-of-type(2) {
-  grid-area: Blazers__titulo; }
-
-.blazers__container:nth-last-of-type(1) {
-  grid-area: Blazers__grupo1; }
-
-.blazers__container:nth-last-of-type(0) {
-  grid-area: Blazers__grupo2; }
-
-.blazers__titulo {
-  font-size: 0.7em;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem; }
-
-.blazers__grupo1 {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 0.5rem; }
-
-.blazers__grupo2 {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 2.5rem; }
-
-.blazer__foto1, .blazer__foto2, .blazer__foto3, .blazer__foto4, .blazer__foto5 {
-  width: 400px;
-  height: 400px; }
-
-.prendas__inferiores__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 400px 400px;
-  grid-template-areas: 'Prendas__inferiores__titulo' 'Prendas__inferiores__grupo1' 'Prendas__inferiores__grupo2'; }
-
-.prendas__inferiores__titulo {
-  margin-top: 1rem;
-  font-size: 0.7em;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem; }
-
-.prendas__inferiores__grupo1 {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 0.5rem; }
-
-.prendas__inferiores__grupo2 {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 2.5rem; }
-
-.pantalon__foto1, .pantalon__foto2, .pantalon__foto3, .pantalon__foto4, .pantalon__foto5 {
-  height: 400px; }
-
-.outfits__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 400px;
-  grid-template-areas: 'outfits__titulo' 'outfits__fotos'; }
-
-.outfits__titulo {
-  font-size: 0.7em;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem; }
-
-.outfit__1, .outfit__2, .outfit__3, .outfit__4 {
-  height: 400px; }
-
-.outfits {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 2.5rem; }
-
-.final__pagina5 {
-  display: grid;
-  grid-template-columns: 1fr 203px;
-  grid-template-rows: auto;
-  grid-template-areas: 'footer5 btn__next5';
-  font-size: 0.7em; }
-
-.btn__next__pagina5 {
-  background-color: var(--colorsecundario);
-  opacity: 0.7; }
 
 /*PÁGINA 6*/
 .background6 {
@@ -579,42 +274,8 @@ body a {
   height: 100%;
   z-index: -1; }
 
-.grid__container6 {
-  display: grid; }
-
-.logo6 {
-  width: 4.5rem; }
-
-.navbar6 {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'logo6 navbar6'; }
-
-.navbar6__items {
-  display: flex;
-  flex-direction: row;
-  gap: 0.6em;
-  margin-left: 0.3rem; }
-
-.btn__volver__pagina6 {
-  font-size: 0.7em;
-  background-color: #252525;
-  opacity: 0.7;
-  width: 216px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'btn__volver__pagina6'; }
-
-.introduccion__y__parrafo {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 71px 50px;
-  grid-template-areas: 'Titulo__introduccion' 'Parrafo__introduccion'; }
-
 .introduccion {
-  font-size: 1em;
+  font-size: 1.5em;
   display: flex;
   justify-content: center;
   margin-bottom: 1rem; }
@@ -625,86 +286,20 @@ body a {
   justify-content: center;
   margin-bottom: 2rem; }
 
-.seccion__videos h2 {
-  font-size: 1em;
-  text-align: center; }
-
-.seccion__videos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 100px 500px 100px 500px 100px 500px;
-  grid-template-areas: 'Titulo__seccion__videos' 'Explicacion1' 'video1' 'Explicacion2' 'video2' 'Explicacion3' 'video3'; }
-
-.seccion__videos p {
-  font-size: 0.5em;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-
-.links__materiales {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 100px;
-  grid-template-areas: 'links__titulo' 'links__parrafo'; }
-
-.links__materiales__titulo {
+.links__materiales__titulo, .links__materiales__parrafo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: center;
   margin-top: 1em; }
 
 .links__materiales__parrafo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 1em;
-  font-size: 0.5em;
-  text-align: center; }
-
-.seccion__libros {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100 400px 400px;
-  grid-template-areas: 'recomendaciones__titulo' 'libros__grupo1' 'libros__grupo2'; }
+  font-size: 0.8em; }
 
 .recomendaciones {
   font-size: 0.7em;
   text-align: center; }
-
-.libros__grupo1, .libros__grupo2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 2em;
-  justify-content: center; }
-
-.libros__grupo1 {
-  margin-top: 1rem; }
-
-.libros__grupo2 {
-  margin-top: 1rem; }
-
-.libro1, .libro2, .libro3, .libro4 {
-  width: 400px;
-  height: 400px; }
-
-.pie__pagina6 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 70px 70px;
-  grid-template-areas: 'volver__secciones' 'footer6';
-  row-gap: 1em; }
-
-.footer6 {
-  text-align: center;
-  font-size: 0.7em; }
-
-.volver__secciones {
-  text-align: center;
-  background-color: #252525;
-  opacity: 0.7; }
 
 /*MEDIA PAGINA INDEX*/
 @media (max-width: 480px) {
@@ -789,7 +384,7 @@ body a {
     margin-top: 8rem; }
   .secciones__pagina4 {
     min-width: 1024px; }
-  .ir__tienda__container {
+  .ir__tienda__container, .ir__datoscuriosos__container {
     width: 450px;
     height: 200px;
     background-size: contain;
@@ -799,7 +394,7 @@ body a {
     height: 200px;
     background-size: contain;
     align-items: center; }
-  .ir__tienda {
+  .ir__tienda, .ir__datoscuriosos__container .ir__datoscuriosos {
     width: 450px;
     height: 200px; }
   .ir__datoscuriosos {
