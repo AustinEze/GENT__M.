@@ -2,7 +2,6 @@
 
 .video__grid {
     position: fixed;
-    width: 100%;
     z-index: -100;
   }
 
@@ -69,10 +68,17 @@
             color: $colorprincipal;
         }
   }
+
    
   .next__container {
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (max-width:580px) {
+    .main__logo{
+      width:100vw;
+    }
   }
 
 

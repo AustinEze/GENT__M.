@@ -82,7 +82,7 @@
 
       & .quienes__somos__parrafo {
         @extend .quienes__somos__titulo;
-        font-size: 1em;
+        font-size: 0.8em;
       }
       
       & div .container{
@@ -114,14 +114,33 @@
   
   .redes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-self: center;
     margin-top: 1rem;
+    gap: 1.5em;
 
-      & .redes__container {
-        gap: 1.3em;        
+      & .red {
+        color: $colorprincipal;
+        text-decoration: none;
       }
-  }
+
+      & .instagram:hover {
+        background-color: #414141;
+        border-radius: 5px;
+        color: map-get($redes, instagram);
+      }
+      & .twitter:hover {
+        border-radius: 5px;
+        background-color: #414141;
+        color: map-get($redes, twitter);
+      }
+      & .correo:hover {
+        border-radius: 5px;
+        background-color: #414141;
+        color: map-get($redes, correo);
+      }
+
+    }
   
   .formulario__container {
     grid-area: formulario__container;
@@ -140,7 +159,6 @@
   .nuestras__cedes {
     @include cuadro__contacto;
     width: 700px;
-    margin-left: 11em;
 
     & .__titulo {
       font-size: 1.5em;

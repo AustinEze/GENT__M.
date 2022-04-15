@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="../index.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
 </head>
-<body class="grid__container4" style="min-width: 768;">
+<body class="grid__container4">
     <picture><img class="background__pagina2" src="../Fotos/background-definitivo.jpg"></picture>
     <header class="header4">
         <nav class='navbar navbar-expand-lg navbar-dark bg-dark mb-4'>
@@ -51,8 +51,8 @@
               <span>Menú</span>
             </button>
       
-            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-              <ul class=" navbar-nav mx-auto ">
+            <div class="collapse navbar-collapse text-center"  id="navbarSupportedContent">
+              <ul class=" navbar-nav mx-auto navbar4 mx-auto w-auto" >
                 <li class="nav-item">
                   <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
@@ -77,15 +77,32 @@
     </header>
     <div class="p-3 mb-2 bg-dark bg-gradient text-light text-center fs-4">¡Disfruta de nuestro contenido!</div>
 
-    <div class="secciones__pagina4 text-light">
-        <div class="ir__tienda__container">
-            <a class="ir__tienda text-decoration-none fs-2" href="./Página5.html">Ir a la tienda</a>
-        </div>
-        <div class="ir__datoscuriosos__container">
-            <a class='ir__datoscuriosos text-decoration-none fs-2'href="Página6.html">Impulsa tu vida</a>
-        </div>
-    </div>
-    <footer class="footer4"><p>Aquí se va a encontrar todo el contenido del footer</p></footer>
+    <section>
+      <div class="container">
+          <div class="text-center margin-40px-bottom">
+              <h3 class="no-margin-bottom">Secciones de la página</h3>
+          </div>
+          <div class="categorias-container d-flex text-center justify-content-center">
+            <div class="col-md-5">
+                <a href="../pages/tienda.html" class="card bg-img box-hover cover-background  p-4 text-decoration-none" data-background="img/content/06.jpg" style="background-image: url(../Fotos/background-boton-tienda.jpg); min-width: 320px;">
+                    <div class="mt-auto position-relative z-index-9">
+                        <h5 class="tienda-enlace">Tienda</h5>
+                        <div class="position-relative z-index-9 opacity6 acceder-tienda">Acceder</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-5">
+                <a href="../pages/mejora-tu-vida.html" class="card bg-img box-hover cover-background p-4 text-decoration-none" data-background="img/content/06.jpg" style="background-image: url(../Fotos/background-impulsatuvida.jpg); min-width: 320px;">
+                    <div class="mt-auto position-relative z-index-9">
+                        <h5 class="datos-enlace">Mejora tu vida</h5>
+                        <div class="position-relative z-index-9 opacity6 acceder-datos">Acceder</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+  </section>
+
+    <footer class="footer4"><p>AustinEze Dev. - Practice project</p></footer>
     
 </body>
 </html>

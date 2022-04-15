@@ -7,45 +7,26 @@
     justify-content: center;
   }
   
-  .secciones__pagina4 {
-    display:flex;
-    justify-content: space-around;
-    margin-top: 1.5rem;
+  .categorias-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
+  .tienda-enlace {
+    text-decoration: none;
+    color: $colorprincipal;
+      &:hover {
+        color:grey;
+      }
   }
   
-  .ir__tienda__container {
-    background: url(./Fotos/background-boton-tienda.jpg);
-    width: 600px;
-    height: 300px;
-    align-items: center;
-        & .ir__tienda {
-            width: 600px;
-            height: 300px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            color: $colorprincipal;
-          }
-        
-        & .ir__tienda:hover {
-            color: grey;
-        }  
-        
-}  
-  
-  .ir__datoscuriosos__container {
-    background: url(./Fotos/background-impulsatuvida.jpg);
-    @extend .ir__tienda__container;
-        & .ir__datoscuriosos{
-            @extend .ir__tienda;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-        }
-        & .ir__datoscuriosos:hover {
-            color: grey;
-        }
+  .datos-enlace, .acceder-tienda, .acceder-datos{
+    @extend .tienda-enlace;
   }
+
+  
 
   .footer4 p {
     display:flex;
@@ -53,4 +34,3 @@
     font-size: 0.8em;
     margin-top: 1rem;
   }
-  
